@@ -1,0 +1,245 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.app {
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+  padding: 0;
+}
+.header {
+display: flex;
+flex-direction: row;
+justify-content:space-around;
+width: 100%;
+background-color: #a9e6cd;
+padding: 20px;
+margin-bottom: 20px;
+}
+.btn-search {
+  background-color: rgb(19, 158, 98);
+}
+.new-post {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #f0f9f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post-area {
+  padding: 10px;
+  border: 1px solid green;
+  overflow: auto;
+  resize: none;
+  width: 100%;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-top: 5px;
+}
+
+#submit {
+  background-color: rgb(4, 116, 69);
+  border: none;
+  width: 80px;
+  height: 50px;
+  margin-top: 10px;
+  color: white;
+  box-shadow: 2px 2px #02534f;
+}
+.post-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  justify-items: left;
+  margin-bottom: 10px;
+}
+.dropdown-post {
+  background-color: rgb(4, 116, 69);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 80px;
+  height: 50px;
+  margin-top: 10px;
+  color: white;
+  box-shadow: 2px 2px #02534f;
+  padding: 10px 10px 10px 5px;
+  position: absolute;
+  margin: 10px;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+li {
+  list-style-type: none;
+}
+
+a:focus,
+a:hover {
+  color: #74ae97;
+  text-decoration: underline;
+}
+.post {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  width: 100%;
+}
+.post-info {
+margin-bottom: 10px;
+}
+input{
+  padding: 5px;
+}
+
+.post-author{
+  padding: 10px;
+}
+.new-comment{
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #e4f7ef;
+  margin-top: 20px;
+  border: 1px solid transparent;
+  border-radius: 30px 0;
+}
+.form-group{
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  
+}
+a{
+ color: #035f36;
+}
+.comment-btn{
+  padding-left: 20px;
+  margin-left: 10px;
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  background-image: url("./icons/bubble.svg");
+  background-size: 100% 100%;
+  border: 0;
+  color: black;
+  font-size: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+.title{
+  font-size: 25px;
+  font-weight: bold;
+}
+.thumbs-up{
+  padding-left: 20px;
+  margin-left: 20px;
+  align-self: center;
+  width: 22px;
+  height: 22px;
+  background-image: url("./icons/thumbs-up.svg");
+  background-size: 100% 100%;
+  border: 0;
+  
+  font-size: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  background-color:transparent;
+}
+.thumbs-down{
+  padding-left: 20px;
+  align-self: center;
+  width: 22px;
+  height: 22px;
+  background-image: url("./icons/thumbs-down.svg");
+  background-size: 100% 100%;
+  border: 0;
+  color: black;
+  font-size: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+.author{
+  color: #02534f;
+  padding-right: 10px;
+
+}
+.comment {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 5px 5px 2px #888888;
+  width: 100%;
+}
+.comment-info {
+  padding: 10px;
+}
+ol{
+  padding: 0;
+}
+.comment-text{
+  border: 0.5px solid green;
+  padding: 20px;
+}
+li{
+  margin-bottom: 10px;
+}
+.delete{
+  padding-left: 20px;
+  margin-left: 20px;
+  align-self: center;
+  width: 22px;
+  height: 22px;
+  background-image: url("./icons/bin.svg");
+  background-size: 100% 100%;
+  border: 0;
+  
+  font-size: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  background-color:transparent;
+}
+.show-comment{
+  padding-left: 20px;
+  margin-left:20px; 
+  margin-top: 5px;
+  align-self: center;
+  width: 22px;
+  height: 22px;
+  background-image: url("./icons/pencil.svg");
+  background-size: 100% 100%;
+  border: 0;
+  color: black;
+  font-size: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
