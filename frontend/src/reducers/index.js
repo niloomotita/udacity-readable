@@ -1,8 +1,13 @@
 import {
-    ADD_POST
+    ADD_POST,
+    ADD_COMMENTS,
   } from '../actions/index.js'
   
-  
+  const initialstate={
+    posts:[],
+    comments:[],
+    currentPost:"",
+}
   function readableApp(state = [], action) {
     switch (action.type) {
       case ADD_POST:

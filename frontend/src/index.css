@@ -243,3 +243,6 @@ li{
   outline: none;
   background-color: transparent;
 }
+input{
+  outline: none;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux'
 import NewPost from "./NewPost";
 import Comment from "./Comment";
 import Posts from "./Posts"
@@ -177,5 +178,10 @@ removeContent = (id) => {
     )
   }
 }
+const mapStateToProps = state => {
+    return {
+      posts: ["hello"]
+    }
+  }
 
-export default App;
+export default connect(mapStateToProps)(App);
